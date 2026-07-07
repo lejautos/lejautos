@@ -2,18 +2,262 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact - L.E.J Autos</title>
-</head>
-<body>
 
-<h1>Contact L.E.J Autos</h1>
+<style>
 
-<p>📍 415 Route de l'Église<br>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#111;
+color:#fff;
+}
+
+header{
+background:#000;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:3px solid #d60000;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+}
+
+.logo span{
+color:#d60000;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff2d2d;
+}
+
+.hero{
+
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+padding:90px 20px;
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:55px;
+margin-bottom:20px;
+
+}
+
+.hero h1 span{
+
+color:#ff2d2d;
+
+}
+
+.hero p{
+
+font-size:22px;
+color:#ddd;
+
+}
+
+.container{
+
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+
+}
+
+.contact{
+
+display:grid;
+grid-template-columns:350px 1fr;
+gap:35px;
+
+}
+
+.box{
+
+background:#1d1d1d;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.4);
+
+}
+
+.box h2{
+
+margin-bottom:20px;
+color:#ff2d2d;
+
+}
+
+.info{
+
+margin-bottom:18px;
+font-size:18px;
+
+}
+
+input,
+textarea{
+
+width:100%;
+padding:16px;
+margin-bottom:18px;
+border:none;
+border-radius:8px;
+background:#2a2a2a;
+color:white;
+font-size:16px;
+
+}
+
+textarea{
+
+height:170px;
+resize:none;
+
+}
+
+button{
+
+width:100%;
+padding:18px;
+border:none;
+background:#d60000;
+color:white;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#ff0000;
+
+}
+  <div class="contact-grid">
+
+<div class="contact-info">
+
+<h3>📍 Nos coordonnées</h3>
+
+<p><strong>Adresse :</strong><br>
+415 Route de l'Église<br>
 76440 Sainte-Geneviève</p>
 
-<p>📞 06 42 55 80 32</p>
+<p><strong>📞 Téléphone :</strong><br>
+<a href="tel:0642558032">06 42 55 80 32</a></p>
 
-<p>📧 l.e.jauto@hotmail.com</p>
+<p><strong>✉️ E-mail :</strong><br>
+<a href="mailto:l.e.jauto@hotmail.com">l.e.jauto@hotmail.com</a></p>
+
+<p><strong>🕒 Horaires</strong><br>
+Lundi - Vendredi : 9h00 - 18h00<br>
+Samedi : Sur rendez-vous<br>
+Dimanche : Fermé</p>
+
+</div>
+
+<div class="contact-form">
+
+<h2>Envoyez-nous un message</h2>
+
+<form action="https://formsubmit.co/l.e.jauto@hotmail.com" method="POST">
+
+<input type="hidden" name="_subject" value="Nouveau message - L.E.J Autos">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://lejautos.github.io/lejautos/">
+
+<input type="text" name="Nom" placeholder="Votre nom" required>
+
+<input type="email" name="Email" placeholder="Votre e-mail" required>
+
+<input type="tel" name="Telephone" placeholder="Votre téléphone">
+
+<input type="text" name="Sujet" placeholder="Sujet" required>
+
+<textarea name="Message" rows="6" placeholder="Votre message..." required></textarea>
+
+<button type="submit">📩 Envoyer le message</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="services">
+
+<div class="service">
+<h3>✅ Devis gratuit</h3>
+<p>Sans engagement.</p>
+</div>
+
+<div class="service">
+<h3>⚡ Réponse rapide</h3>
+<p>Nous répondons rapidement à toutes vos demandes.</p>
+</div>
+
+<div class="service">
+<h3>🚚 Livraison</h3>
+<p>Expédition partout en France.</p>
+</div>
+
+<div class="service">
+<h3>🔧 Pièces neuves & occasion</h3>
+<p>Des milliers de références disponibles.</p>
+</div>
+
+</div>
+  </div>
+
+<footer>
+
+<h2>L.E.J Autos</h2>
+
+<p style="margin-top:10px;">
+🚗 Achat • Vente • Pièces détachées
+</p>
+
+<p style="margin-top:8px;">
+📍 415 Route de l'Église, 76440 Sainte-Geneviève
+</p>
+
+<p style="margin-top:8px;">
+📞 06 42 55 80 32 &nbsp; | &nbsp; ✉️ l.e.jauto@hotmail.com
+</p>
+
+<p style="margin-top:20px;color:#888;font-size:14px;">
+© 2026 L.E.J Autos - Tous droits réservés.
+</p>
+
+</footer>
 
 </body>
 </html>
