@@ -1,32 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<title>Reprise véhicule - L.E.J Autos</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#111;
+color:white;
+margin:0;
+padding:30px;
+}
+
+h1{
+color:#e30613;
+}
+
+form{
+background:#1d1d1d;
+padding:25px;
+border-radius:15px;
+max-width:500px;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+border-radius:5px;
+border:none;
+}
+
+button{
+background:#e30613;
+color:white;
+padding:15px 25px;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🚗 Faire reprendre mon véhicule</h1>
+
+<p>Vous souhaitez vendre votre véhicule ? Remplissez ce formulaire, nous vous répondrons rapidement.</p>
+
 <form action="https://formsubmit.co/l.e.jauto@hotmail.com" method="POST">
 
 <input type="hidden" name="_subject" value="Nouvelle demande de reprise véhicule - L.E.J Autos">
+
 <input type="hidden" name="_captcha" value="false">
 
-<label>Marque :</label><br>
-<input type="text" name="Marque"><br><br>
+<input type="hidden" name="_template" value="table">
 
-<label>Modèle :</label><br>
-<input type="text" name="Modele"><br><br>
 
-<label>Année :</label><br>
-<input type="text" name="Annee"><br><br>
+<label>Marque :</label>
+<input type="text" name="Marque" required>
 
-<label>Kilométrage :</label><br>
-<input type="text" name="Kilometrage"><br><br>
 
-<label>Carburant :</label><br>
-<input type="text" name="Carburant"><br><br>
+<label>Modèle :</label>
+<input type="text" name="Modele" required>
 
-<label>État du véhicule :</label><br>
-<textarea name="Etat"></textarea><br><br>
 
-<label>Téléphone :</label><br>
-<input type="tel" name="Telephone"><br><br>
+<label>Année :</label>
+<input type="text" name="Annee">
 
-<label>Email :</label><br>
-<input type="email" name="Email"><br><br>
+
+<label>Kilométrage :</label>
+<input type="text" name="Kilometrage">
+
+
+<label>Carburant :</label>
+<input type="text" name="Carburant">
+
+
+<label>État du véhicule :</label>
+<textarea name="Etat" rows="5"></textarea>
+
+
+<label>Téléphone :</label>
+<input type="tel" name="Telephone">
+
+
+<label>Email :</label>
+<input type="email" name="Email">
+
 
 <button type="submit">Envoyer ma demande de reprise</button>
 
 </form>
+
+</body>
+</html>
