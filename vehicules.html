@@ -2,29 +2,95 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Véhicules - L.E.J Autos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Nos véhicules - L.E.J Autos</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#111;
+color:white;
+margin:0;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+color:#e30613;
+}
+
+.photo{
+width:100%;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.infos{
+background:#1c1c1c;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.prix{
+font-size:36px;
+font-weight:bold;
+color:#e30613;
+}
+
+.btn{
+display:inline-block;
+background:#e30613;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+border-radius:10px;
+margin:10px;
+font-size:18px;
+}
+
+ul{
+line-height:2;
+font-size:18px;
+}
+</style>
+
 </head>
 
 <body>
 
-<h1>Nos véhicules</h1>
+<div class="container">
 
-<h2>Fiat Tipo Lounge</h2>
-  <img src="0000C5C3-18A2-4B1C-A57C-6C30599A5FA5.png" width="100%">
+<h1>Fiat Tipo Lounge</h1>
 
-<p>📅 Année : 2018</p>
-<p>⛽ Essence</p>
-<p>📍 115 000 km</p>
-<p>💰 Prix : 9 890 €</p>
+<img src="0000C5C3-18A2-4B1C-A57C-6C30599A5FA5.png" class="photo">
 
-<p>
-Une berline fiable, économique et idéale pour un usage quotidien.
-Distribution remplacée, contrôle technique OK.
-</p>
+<div class="infos">
 
-<button>📞 Appeler</button>
+<div class="prix">9 890 €</div>
 
-<button>💬 Demander des informations</button>
+<ul>
+<li>📅 Année : 2018</li>
+<li>⛽ Essence</li>
+<li>📍 115 000 km</li>
+<li>⚙️ Distribution remplacée</li>
+<li>✅ Contrôle technique OK</li>
+<li>🛡 Garantie 3 mois</li>
+</ul>
+
+<a class="btn" href="tel:0642558032">📞 Appeler</a>
+
+<a class="btn" href="contact.html">💬 Demander des informations</a>
+
+</div>
+
+</div>
 
 </body>
 </html>
